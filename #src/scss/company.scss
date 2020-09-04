@@ -1,0 +1,318 @@
+.company {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.wrapper-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__firms {
+    }
+
+    &__body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+    }
+    @media (max-width: $md3+px) {
+        &__body {
+            display: none;
+        }
+    }
+    @media (max-width: $md2+px) {
+        &__body {
+            padding: 20px 0;
+        }
+    }
+}
+.firms-company {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (max-width: $md1+px) {
+        & {
+            justify-content: space-around;
+        }
+    }
+    @media (max-width: $md2+px) {
+        & {
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+        &__item {
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @media (max-width: $md3+px) {
+        & {
+            padding: 10px 0;
+        }
+        &__item {
+            min-height: 97px;
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #e3e3e3;
+            padding: 10px 0;
+        }
+        &__item img {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: $md3+px) {
+    .item-border {
+        border-right: 2px solid #e3e3e3;
+    }
+}
+
+.body-company {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    &__content {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    &__img {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img img {
+        width: 100%;
+    }
+    @media (max-width: $md2+px) {
+        & {
+            flex-direction: column;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+.content-company {
+    &__features {
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 34px;
+        color: #009b4d;
+    }
+
+    &__title {
+        width: 80%;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 50px;
+        letter-spacing: -0.5px;
+        color: #2b292d;
+        padding: 15px 0;
+    }
+
+    &__subtitle {
+        width: 65%;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 34px;
+        color: #2b292d;
+        padding: 15px 0;
+    }
+    &__text {
+        width: 65%;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        color: #2b292d;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 10px 0;
+        position: relative;
+    }
+    &__text:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: #3142c6;
+    }
+    &__text span {
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        color: #3142c6;
+        display: flex;
+    }
+    &__text span img {
+        padding-right: 10px;
+    }
+
+    @media (max-width: $md1+px) {
+        &__subtitle {
+            width: 90%;
+        }
+    }
+}
+.benefits-company {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    &__item {
+        display: flex;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        color: #2b292d;
+        padding: 20px 0;
+    }
+    &__item img {
+        padding-right: 10px;
+    }
+}
+.wrapper-company {
+    &__mobile {
+        display: none;
+    }
+    @media (max-width: $md3+px) {
+        &__mobile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: $md3+px) {
+    .mobile-company {
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 20px 0;
+        }
+    }
+    .item-company {
+        &__customer {
+            font-family: "Work Sans";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 34px;
+            color: #009b4d;
+            margin: 0 auto;
+        }
+
+        &__title {
+            width: 70%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: "Work Sans";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -0.357143px;
+            color: #2b292d;
+            padding: 10px 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__subtitle {
+            width: 70%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: "Work Sans";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 34px;
+            color: #2b292d;
+            padding: 10px 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+        }
+        &__img img {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: $md4+px) {
+    .item-company {
+        &__customer {
+            margin: 0;
+        }
+        &__title {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0;
+            text-align: left;
+        }
+        &__subtitle {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0;
+            text-align: left;
+        }
+    }
+}
