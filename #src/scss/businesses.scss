@@ -1,0 +1,151 @@
+.businesses {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    padding: 40px 0;
+    border-bottom: 2px solid #e5e5e5;
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.wrapper-businesses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    &__firms {
+    }
+
+    &__slider {
+    }
+    &__body {
+    }
+}
+.ballon {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @media (max-width: $md3+px) {
+        & {
+            width: 20%;
+        }
+    }
+    @media (max-width: $md4+px) {
+        & {
+            width: 100%;
+            position: static;
+        }
+    }
+}
+.body-businesses {
+    padding: 20px 0;
+    &__title {
+        width: 60%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #3142c6;
+        margin: 0 auto;
+    }
+    &__sliders {
+        width: 800px;
+        position: relative;
+    }
+    &__sliders .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__sliders .slick-dots li {
+        list-style: none;
+        margin: 0 10px;
+    }
+    &__sliders .slick-dots button {
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        background: #d5d4d5;
+        border-radius: 50%;
+    }
+    &__sliders .slick-dots li.slick-active button {
+        background: #3142c5;
+    }
+    &__slide {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+        color: #2b292d;
+    }
+    @media (max-width: $md4+px) {
+        &__title {
+            width: 35%;
+        }
+    }
+}
+
+.sliders-businesses {
+    &__slide {
+    }
+}
+.slide-businesses {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__text {
+        width: 80%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+        color: #2b292d;
+        padding: 20px 0;
+    }
+    &__users {
+    }
+    @media (max-width: $md3+px) {
+        &__text {
+            width: 40%;
+        }
+    }
+}
+
+.info-users {
+    padding: 20px 0;
+    &__name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__job {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+//sliders
+.slick-track {
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
+}

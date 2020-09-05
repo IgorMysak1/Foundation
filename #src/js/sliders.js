@@ -1,22 +1,21 @@
 //SLIDERS
-if($('.mainslider').length>0){
-	$('.mainslider').slick({
+if ($('.body-businesses__sliders').length > 0) {
+	$('.body-businesses__sliders').slick({
 		//autoplay: true,
 		//infinite: false,
 		dots: true,
 		arrows: false,
-		accessibility:false,
-		slidesToShow:1,
+		slidesToShow: 1,
 		autoplaySpeed: 3000,
 		//asNavFor:'',
 		//appendDots:
 		//appendArrows:$('.mainslider-arrows .container'),
-		nextArrow:'<button type="button" class="slick-next"></button>',
-		prevArrow:'<button type="button" class="slick-prev"></button>',
-		responsive: [{
-			breakpoint: 768,
-			settings: {}
-		}]
+		// nextArrow:'<button type="button" class="slick-next"></button>',
+		// prevArrow:'<button type="button" class="slick-prev"></button>',
+		// responsive: [{
+		// 	breakpoint: 768,
+		// 	settings: {}
+		// }]
 	});
 }
 /*
@@ -43,7 +42,7 @@ if($('.reviews-object__items').length>0){
 			},{
 				breakpoint: 768,
 				settings: {
-					
+
 				}
 			}]
 		});
@@ -113,7 +112,7 @@ if($('.newsmodule-slider').length>0){
 		$('.newsmodule-slider').slick('goTo',$(this).index());
 	});
 	$('.newsmodule-navigator-info span').eq(1).html($('.newsmodule-items-item').length);
-	
+
 	$('.newsmodule-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.newsmodule-navigator-info span').eq(0).html(nextSlide+1);
 	});

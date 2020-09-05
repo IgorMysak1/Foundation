@@ -1,8 +1,12 @@
 .header {
-	height: 100%;
+	min-height: 83px;
 	width: 100%;
 	background: #f3c6bd;
 	padding: 20px 0;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
 	&__wrapper {
 		height: 100%;
 		width: 100%;
@@ -96,6 +100,7 @@
 	}
 }
 .btn-header {
+	max-width: 300px;
 	background: #3247c7;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	display: flex;
