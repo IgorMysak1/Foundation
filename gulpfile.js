@@ -41,7 +41,7 @@ let { src, dest } = require('gulp'),
 	terser = require('gulp-terser'),
 	imagemin = require('gulp-imagemin'),
 	webp = require('gulp-webp'),
-	webphtml = require('gulp-webp-html'),
+	webphtml = require('gulp-webp-in-html'),
 	webpcss = require('gulp-webpcss'),
 	svgSprite = require('gulp-svg-sprite'),
 	ttf2woff = require('gulp-ttf2woff'),
@@ -53,7 +53,7 @@ function browserSync(arguments) {
 		server: {
 			baseDir: `./${projectFolder}/`
 		},
-		port: 3000,
+		port: 777,
 		notify: false
 	})
 }

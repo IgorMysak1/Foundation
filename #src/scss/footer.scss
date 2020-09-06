@@ -1,5 +1,196 @@
-footer {
+.footer {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    padding: 30px 0;
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+    }
+    @media (max-width: $md3+px) {
+        & {
+            padding: 20px 0 0 0;
+        }
+    }
 }
-//====================================================================================================
+.wrapper-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__body {
+    }
 
-//====================================================================================================
+    &__line {
+    }
+}
+.body-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    @media (max-width: $md3+px) {
+        & {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__content {
+            width: 50%;
+            align-items: center;
+        }
+    }
+    @media (max-width: $md4+px) {
+        &__content {
+            width: 100%;
+        }
+        & {
+            align-items: flex-start;
+        }
+    }
+}
+.content-footer {
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        color: rgba(43, 41, 45, 0.6);
+        text-align: left;
+        width: 40%;
+        padding: 10px 0;
+    }
+
+    &__apps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__apps img {
+        margin-right: 10px;
+    }
+    @media (max-width: $md3+px) {
+        &__text {
+            display: none;
+        }
+        &__apps {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px 0;
+            border-bottom: 1px solid #e3e3e3;
+        }
+    }
+    @media (max-width: $md4+px) {
+        &__text {
+            width: 100%;
+            margin: 0;
+            text-align: left;
+        }
+    }
+}
+.wrapper-header {
+    &__logo {
+    }
+}
+
+.row-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 20px;
+    li {
+        list-style: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(43, 41, 45, 0.6);
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 28px;
+        color: #2b292d;
+    }
+    @media (max-width: $md3+px) {
+        & {
+            padding: 10px 0;
+        }
+        &__title {
+            margin: 0 auto;
+        }
+        li {
+            text-align: center;
+        }
+    }
+    @media (max-width: $md4+px) {
+        & {
+            padding: 10px 0;
+        }
+        &__title {
+            margin: 0;
+        }
+        li {
+            text-align: left;
+            line-height: 24px;
+        }
+    }
+}
+.line-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 0;
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(43, 41, 45, 0.6);
+        padding-right: 20px;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img img {
+        padding-left: 20px;
+    }
+    @media (max-width: $md3+px) {
+        & {
+            padding: 20px 0;
+        }
+    }
+    @media (max-width: $md4+px) {
+        & {
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 20px 0;
+        }
+        &__img {
+            padding: 20px 0;
+        }
+        &__img img {
+            padding: 0 20px 0 0;
+        }
+    }
+}

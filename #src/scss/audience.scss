@@ -71,7 +71,7 @@
             line-height: 50px;
         }
         &__subtitle {
-            width: 70%;
+            width: 50%;
             font-style: normal;
             font-weight: normal;
             font-size: 24px;
@@ -109,9 +109,11 @@
         }
         &__get {
             margin: 5px 0;
+            width: 50%;
         }
         &__more {
             margin: 5px 0;
+            width: 50%;
         }
     }
     @media (max-width: $md4+px) {
@@ -147,11 +149,6 @@
         text-align: center;
         color: #2b292d;
     }
-    &__item:hover {
-        background: #3141c5;
-        transition: 0.7s;
-        color: #ffffff;
-    }
     &__item:last-child {
         margin-right: 0;
     }
@@ -181,6 +178,13 @@
         }
         &__item:hover {
             color: #2b292d;
+        }
+    }
+    @media (min-width: $md3+px) {
+        &__item:hover {
+            background: #3141c5;
+            transition: 0.7s;
+            color: #ffffff;
         }
     }
     @media (max-width: $md4+px) {

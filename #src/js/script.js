@@ -6,7 +6,7 @@ function testWebP(callback) {
 	webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
 }
 
-testWebP(function(support) {
+testWebP(function (support) {
 
 	if (support == true) {
 		document.querySelector('body').classList.add('webp');
@@ -304,3 +304,16 @@ function tip() {
 		$(this).toggleClass('active');
 	});
 }
+//popup
+let btnPop = document.querySelector('.pop');
+let btnPopUp = document.querySelector('.popupBlock');
+let arrowPopUp = document.querySelector('.pop img');
+btnPop.addEventListener('click', function () {
+	if (document.querySelector('.popupBlock.active')) {
+		btnPopUp.classList.remove('active');
+		arrowPopUp.style.transform = "rotate(0deg)"
+	} else {
+		btnPopUp.classList.add('active');
+		arrowPopUp.style.transform = "rotate(180deg)"
+	}
+});
