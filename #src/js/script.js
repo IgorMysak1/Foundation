@@ -304,16 +304,3 @@ function tip() {
 		$(this).toggleClass('active');
 	});
 }
-//popup
-let btnPop = document.querySelector('.pop');
-let btnPopUp = document.querySelector('.popupBlock');
-let arrowPopUp = document.querySelector('.pop img');
-btnPop.addEventListener('click', function () {
-	if (document.querySelector('.popupBlock.active')) {
-		btnPopUp.classList.remove('active');
-		arrowPopUp.style.transform = "rotate(0deg)"
-	} else {
-		btnPopUp.classList.add('active');
-		arrowPopUp.style.transform = "rotate(180deg)"
-	}
-});
